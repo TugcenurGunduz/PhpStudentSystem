@@ -12,6 +12,7 @@ $password = "";
 $database = "student";
 
 error_reporting(0);
+
 //veritabanı bağlantısı
 try {
     $db = new PDO("mysql:host=$servername;dbname=student", $username, $password);
@@ -77,6 +78,8 @@ foreach ($db->query($sql) as $veri) //veri tabanından çağırırken
         </form>
         <td><?=$veri['Dersler']?></td>
 
+
+
     </tr>
 
 <?php } ?>
@@ -100,6 +103,7 @@ foreach ($db->query($sql) as $veri) //veri tabanından çağırırken
 
     ?>
     <?php
+
     //EKLEME Komutları
 
     if($_REQUEST['islem']=="ekle" && $_SERVER["REQUEST_METHOD"]=="POST")
