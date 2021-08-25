@@ -1,10 +1,10 @@
 <html>
 <head>
-    <title>Php Database İşlemleri</title>
+    <title>Php Öğrenci İşlemleri</title>
 </head>
 <body>
 <?php
-//Hata raporlamayı kapatır(uyarıları)----->  error_reporting(0);
+//Uyarıları raporlamayı kapatır
 error_reporting(0);
 $servername = "localhost";
 $username = "root";
@@ -17,14 +17,15 @@ try {
     // set the PDO error mode to exception
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Bağlantı Başarılı";
+
 } catch(PDOException $e) {
     echo "Bağlantı Hatası <br>:" . $e->getMessage();
 }
 
 ?>
 
-
-<br><b><i>******YENİ KAYIT EKLEME MENÜSÜ*******</i></b><br>
+<br>
+<br><b><i>*****YENİ KAYIT EKLEME MENÜSÜ*****</i></b><br>
 <br>
 <form action="?islem=ekle" method="post">
     Öğrenci Numarası:<input type="text" name="Numara" required><br>
@@ -79,12 +80,12 @@ if($_REQUEST['islem']=="guncelle" && $_SERVER["REQUEST_METHOD"]=="POST")
     $sql="UPDATE ogrenci SET Numara='$Numara', AdSoyad='$AdSoyad', Bolum='$Bolum' WHERE Id=$id";
     $db->exec($sql);
     echo "Güncelleme Yapıldı <br>";
-    /*header("Location : ?islem=guncellendi");*/
+    header("Location : ?islem=guncellendi");
 }
 
 ?>
 
-<br><b><i>******ÖĞRENCİ LİSTESİ*****</i></b><br>
+<br><b><i>*****ÖĞRENCİ LİSTESİ*****</i></b><br>
 <br>
 <table border="1", width="600">
     <tr bgcolor="#1e90ff">

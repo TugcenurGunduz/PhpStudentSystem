@@ -55,6 +55,7 @@ try {
         <th>Öğrenci Numarası</th>
         <th>Adı Soyadı</th>
         <th>Bölüm</th>
+        <th>Bölüm Id</th>
         <th>Ders Ekle</th>
         <th>Dersler</th>
     </tr>
@@ -70,12 +71,11 @@ foreach ($db->query($sql) as $veri) //veri tabanından çağırırken
         <td><?=$veri['Numara']?></td>
         <td><?=$veri['AdSoyad']?></td>
         <td><?=$veri['Bolum']?></td>
+        <td><?=$veri['BolumId']?></td>
         <form action="DersEkle.php" method="post">
             <td><a href="?islem=DersEkle&id=<?=$veri['Id']?>">DERS EKLE</a></td>
         </form>
         <td><?=$veri['Dersler']?></td>
-
-
 
     </tr>
 
@@ -115,7 +115,7 @@ foreach ($db->query($sql) as $veri) //veri tabanından çağırırken
         /*header("Location : ?islem=eklendi");*/
     }
     ?>
-    <br><b><i>******DERS EKLEME MENÜSÜ*******</i></b><br>
+    <b><i>******DERS EKLEME MENÜSÜ*******</i></b><br>
     <br>
     <form action="?islem=ekle&id=<?=$veri['Id'] ?>" method="post">
         Öğrenci Numarası:<input type="text" name="Numara" value="<?=$veri['Numara'] ?>" required><br>
@@ -136,8 +136,8 @@ foreach ($db->query($sql) as $veri) //veri tabanından çağırırken
             <option>EMG304</option>
             <option>GME402</option>
 
-        </select>
-        <br><input type="submit" value="Ekle">
+        </select><br>
+        <br><input type="submit" value="Ekle"><br>
         <br>
 
 
