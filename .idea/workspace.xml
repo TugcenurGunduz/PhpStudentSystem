@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58a89d94-b493-4e0a-b9ad-f2c5eaf6db0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DersEkle.php" beforeDir="false" afterPath="$PROJECT_DIR$/DersEkle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student.php" beforeDir="false" afterPath="$PROJECT_DIR$/student.php" afterDir="false" />
-    </list>
+    <list default="true" id="58a89d94-b493-4e0a-b9ad-f2c5eaf6db0d" name="Default Changelist" comment="Commit" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +71,16 @@
       <workItem from="1629789202069" duration="12555000" />
       <workItem from="1629802722298" duration="1834000" />
       <workItem from="1629807837107" duration="4580000" />
-      <workItem from="1629876974149" duration="1073000" />
+      <workItem from="1629876974149" duration="1173000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit">
+      <created>1629896651918</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1629896651918</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,5 +98,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
   </component>
 </project>
